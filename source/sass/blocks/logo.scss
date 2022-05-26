@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   z-index: 11;
+  padding-top: 16px;
 }
 
 .logo__img {
@@ -19,11 +20,15 @@
   }
 }
 
+.logo__img .logo__icon-star {
+  fill: $pink;
+}
+
 .logo__link {
   padding-top: 7px;
 
   &:hover > .logo__img {
-    fill: #d22856;
+    fill: $pink;
   }
 
   &:active > .logo__img {
@@ -33,22 +38,32 @@
 }
 
 @media (min-width: $tablet-width) {
+  .logo__link {
+    margin-top: -16px;
+  }
+
   .logo__img--glasses {
     display: inline-block;
-    fill: #ffffff;
+    margin-right: 8px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .logo__link {
+    margin-top: 4px;
+  }
+
   .logo__img--glasses,
   .logo__img--text {
     display: none;
-    fill: #ffffff;
   }
 
   .logo__img--glasses-star,
   .logo__img--text-star {
     display: inline-block;
-    fill: #ffffff;
+  }
+
+  .logo__img--glasses-star {
+    margin-right: 8px;
   }
 }
