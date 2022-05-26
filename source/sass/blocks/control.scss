@@ -21,7 +21,7 @@
 }
 
 .control__input:checked + .control__check-box {
-  background-image: url("../../images/tick.svg");
+  background-image: url("./../images/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -61,7 +61,7 @@
 }
 
 .control__input:checked + .control__radio {
-  background-image: url("../../images/radio-small.svg");
+  background-image: url("./../images/radio-small.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
